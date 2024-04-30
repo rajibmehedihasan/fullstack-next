@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--foreground-color: #000;
+	--background-color: #fff;
+}
+
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+	:root {
+		--foreground-color: #fff;
+		--background-color: #000;
+	}
+}
+
+/* Apply colors to body */
+body {
+	color: var(--foreground-color);
+	background-color: var(--background-color);
+}
+
+/* Basic styling for elements */
+button {
+	padding: 0.5rem 1rem;
+	font-size: 1rem;
+	border: none;
+	border-radius: 0.25rem;
+	cursor: pointer;
+}
+
+input,
+textarea {
+	padding: 0.5rem;
+	border: 1px solid #ccc;
+	border-radius: 0.25rem;
+	width: 100%;
+	margin-bottom: 1rem;
+}
+
+/* Basic styles for headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-top: 0;
+	margin-bottom: 0.5rem;
+	font-weight: 500;
+	line-height: 1.2;
+}
+
+h1 {
+	font-size: 2.5rem;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+h3 {
+	font-size: 1.75rem;
+}
+
+h4 {
+	font-size: 1.5rem;
+}
+
+h5 {
+	font-size: 1.25rem;
+}
+
+h6 {
+	font-size: 1rem;
+}

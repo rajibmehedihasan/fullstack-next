@@ -35,7 +35,7 @@ export default function Home() {
     const handleApiCall = async () => {
         try {
             const fetchData = async () => {
-                const response = await fetch("/api/route", {
+                const response = await fetch("/api/example", {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",

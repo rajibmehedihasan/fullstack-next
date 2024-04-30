@@ -1,14 +1,26 @@
-type Props = {
-    type?: "submit" | "reset" | "button" | undefined;
+import { MouseEventHandler, ReactNode } from "react";
+
+type ButtonProps = {
+    type?: "submit" | "reset" | "button";
+    onClick?: MouseEventHandler<HTMLButtonElement>;
+    disabled?: boolean;
+    children?: ReactNode;
 };
 
-const Button = ({ type }: Props) => {
+const Button = ({
+    type = "button",
+    onClick,
+    disabled = false,
+    children,
+}: ButtonProps) => {
     return (
         <button
             className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-            type={type || "button"}
+            type={type}
+            onClick={onClick}
+            disabled={disabled}
         >
-            Button
+            {children || "Button"}
         </button>
     );
 };
