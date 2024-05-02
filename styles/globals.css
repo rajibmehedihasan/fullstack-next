@@ -9,12 +9,12 @@
 }
 
 /* Dark mode styles */
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
 	:root {
 		--foreground-color: #fff;
 		--background-color: #000;
 	}
-}
+} */
 
 /* Apply colors to body */
 body {

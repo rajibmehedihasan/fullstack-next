@@ -41,7 +41,9 @@ const TextInput = (
                 type={type ? type.toLowerCase() : "text"}
                 placeholder={
                     placeholder ??
-                    (!placeholder && labelText && `Enter ${labelText}`)
+                    (!placeholder &&
+                        labelText &&
+                        `Enter ${labelText.toLowerCase()}`)
                 }
                 required={required}
                 autoComplete="off"

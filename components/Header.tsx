@@ -2,7 +2,7 @@
 import Link from "next/link";
 
 type HeaderProps = {
-    children: React.ReactNode;
+    children?: React.ReactNode;
 };
 
 const Header = ({ children }: HeaderProps) => {

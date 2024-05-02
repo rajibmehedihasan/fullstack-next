@@ -1,4 +1,5 @@
 import Button from "./Button";
-import Input from "./TextInput";
+import FormContainer from "./FormContainer";
+import TextInput from "./TextInput";
 
-export { Button, Input };
+export { Button, TextInput, FormContainer };
