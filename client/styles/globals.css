@@ -5,6 +5,7 @@
 :root {
 	--foreground-color: #000;
 	--background-color: #fff;
+	--primary-color: #007bff;
 }
 
 /* Dark mode styles */
@@ -74,4 +75,8 @@ h5 {
 
 h6 {
 	font-size: 1rem;
+}
+
+.bg-primary {
+	background-color: var(--primary-color) !important;
 }
