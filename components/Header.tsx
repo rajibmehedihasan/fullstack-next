@@ -13,7 +13,7 @@ const Header = ({ children }: HeaderProps) => {
                     <Link
                         className="text-2xl font-medium text-white"
                         title="Home"
-                        href="/sign-in"
+                        href="/"
                     >
                         Personalised, Identity &amp; Authentication Platform
                     </Link>
