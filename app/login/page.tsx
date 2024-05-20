@@ -61,8 +61,8 @@ const SignIn = () => {
                 <div className="text-center my-4">
                     <b>OR</b>
                 </div>
-                <Button onClick={handleOnClick} fullWidth>
-                    SAML Login
+                <Button onClick={handleOnClick} href="/register">
+                    Register
                 </Button>
             </form>
         </div>

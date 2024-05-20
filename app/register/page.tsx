@@ -38,7 +38,15 @@ const SignIn = () => {
                 <div key={user.id}>{user.name}</div>
             ))} */}
             <form noValidate onSubmit={handleSubmit}>
-                <h2 className="text-center mb-8">Login</h2>
+                <h2 className="text-center mb-8">Registration</h2>
+
+                <TextInput
+                    id="name"
+                    labelText="Name"
+                    required
+                    isInvalid
+                    type="text"
+                />
 
                 <TextInput
                     id="email"
@@ -48,6 +56,7 @@ const SignIn = () => {
                     type="email"
                     errorMessage="Enter a valid email address"
                 />
+
                 <TextInput
                     id="password"
                     labelText="Password"
@@ -55,14 +64,23 @@ const SignIn = () => {
                     isInvalid
                     type="password"
                 />
+
+                <TextInput
+                    id="confirmPassword"
+                    labelText="Confirm Password"
+                    required
+                    isInvalid
+                    type="password"
+                />
+
                 <Button type="submit" fullWidth>
-                    Login
+                    Register
                 </Button>
                 <div className="text-center my-4">
                     <b>OR</b>
                 </div>
-                <Button onClick={handleOnClick} fullWidth>
-                    SAML Login
+                <Button href="/login" fullWidth>
+                    Login
                 </Button>
             </form>
         </div>
