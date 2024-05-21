@@ -61,7 +61,7 @@ const SignIn = () => {
                 <div className="text-center my-4">
                     <b>OR</b>
                 </div>
-                <Button onClick={handleOnClick} href="/register">
+                <Button onClick={handleOnClick} href="/register" fullWidth>
                     Register
                 </Button>
             </form>
